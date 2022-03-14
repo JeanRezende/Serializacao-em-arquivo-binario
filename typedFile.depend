@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1570117830 source:/home/samuel/Projetos/typedFile/main.cpp
+	<iostream>
+	<clocale>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+	"intserial.h"
+
+1570067211 source:/home/samuel/Projetos/typedFile/src/header.cpp
+	"header.h"
+
+1570044850 /home/samuel/Projetos/typedFile/include/header.h
+	"serializable.h"
+
+1570044844 /home/samuel/Projetos/typedFile/include/serializable.h
+	<string>
+
+1570109311 /home/samuel/Projetos/typedFile/include/record.h
+	<string>
+	"serializable.h"
+
+1570117830 /home/samuel/Projetos/typedFile/include/typedfile.h
+	<fstream>
+	<type_traits>
+
+1570039086 source:/home/samuel.dias/Projetos/typedFile/main.cpp
+	<iostream>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+
+1570044850 /home/samuel.dias/Projetos/typedFile/include/header.h
+	"serializable.h"
+
+1570044844 /home/samuel.dias/Projetos/typedFile/include/serializable.h
+	<string>
+
+1570045637 /home/samuel.dias/Projetos/typedFile/include/record.h
+	<string>
+	"serializable.h"
+
+1570045509 /home/samuel.dias/Projetos/typedFile/include/typedfile.h
+	<fstream>
+	<type_traits>
+
+1570044864 source:/home/samuel.dias/Projetos/typedFile/src/header.cpp
+	"header.h"
+
+1570069201 source:/home/samuel/Projetos/typedFile/src/intserial.cpp
+	"intserial.h"
+
+1570069193 /home/samuel/Projetos/typedFile/include/intserial.h
+	"serializable.h"
+
+1570067211 source:d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\src\header.cpp
+	"header.h"
+
+1570044850 d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\include\header.h
+	"serializable.h"
+
+1570044844 d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\include\serializable.h
+	<string>
+
+1646697587 source:d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\src\intserial.cpp
+	"intserial.h"
+
+1646679747 d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\include\intserial.h
+	"serializable.h"
+
+1570117830 source:d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\main.cpp
+	<iostream>
+	<clocale>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+	"intserial.h"
+
+1646694546 d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\include\record.h
+	<string>
+	"serializable.h"
+
+1647282984 d:\backup sacred\faculdade\10 periodo\tp\serializacao-clean\include\typedfile.h
+	<fstream>
+	<type_traits>
+
