@@ -10,7 +10,7 @@
 using namespace std;
 
 #include "node.h"
-#include "record.h"
+//#include "record.h"
 #include "intserial.h"
 
 const ios::openmode mode = ios::in | ios::out | ios::binary;
@@ -26,9 +26,9 @@ class mbtree : private fstream {
       bool isOpen();
       bool close();
       void clear();
-      bool readRecord(record<T> &r, unsigned long long int i);
-      bool writeRecord(record<T> &r, unsigned long long int i);
-      bool insertRecord(record<T> &r, unsigned long long int i);
+      bool readRecord(T k, unsigned long long int i);
+      bool writeRecord(T k, unsigned long long int i);
+      bool insertRecord(T k);
       bool removeRecord(T k);
       int search(node<T, MIN_DEGREE>* x, T k);
       void print();
@@ -121,7 +121,7 @@ void mbtree<T, MIN_DEGREE>::clear() {
 }
 
 template <class T, const unsigned int MIN_DEGREE>
-bool mbtree<T, MIN_DEGREE>::readRecord(record<T> &r, unsigned long long int i) {
+bool mbtree<T, MIN_DEGREE>::readRecord(T k, unsigned long long int i) {
     if(isOpen())
     {
         fstream::seekg(i);
@@ -138,7 +138,7 @@ bool mbtree<T, MIN_DEGREE>::readRecord(record<T> &r, unsigned long long int i) {
 }
 
 template <class T, const unsigned int MIN_DEGREE>
-bool mbtree<T, MIN_DEGREE>::writeRecord(record<T> &r, unsigned long long int i) {
+bool mbtree<T, MIN_DEGREE>::writeRecord(T k, unsigned long long int i) {
     if(isOpen()){
         fstream::seekp(pos2index(i), ios::beg);
         fstream::write(r.toString().c_str, r.size());
@@ -150,8 +150,8 @@ bool mbtree<T, MIN_DEGREE>::writeRecord(record<T> &r, unsigned long long int i) 
 }
 
 template <class T, const unsigned int MIN_DEGREE>
-bool mbtree<T, MIN_DEGREE>::insertRecord(record<T> &r, unsigned long long int i) {
-
+bool mbtree<T, MIN_DEGREE>::insertRecord(T k) {
+   
 }
 
 template <class T, const unsigned int MIN_DEGREE>
