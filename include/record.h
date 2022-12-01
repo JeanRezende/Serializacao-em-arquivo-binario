@@ -40,7 +40,6 @@ class record : public serializable {
 
 template <class T>
 record<T>::record() : serializable() {
-    //this->data
     this->deleted = false;
     this->next = 0;
 }
@@ -55,7 +54,7 @@ record<T>::record(T d) : serializable() {
 template <class T>
 record<T>::record(const record<T> &other) {
     this->data = other.getData();
-    this->deleted = other.deleted;
+    this->deleted = other.isDeleted();
     this->next = other.getNext();
 }
 
@@ -64,11 +63,21 @@ record<T>::~record() {}
 
 template <class T>
 record<T> record<T>::operator=(const record<T> &other) {
-    //TODO
+
+    if(this == &other) return *this;
+
+    record<T> aux(other);
+
+    this->data = other.getData();
+    this->next = other.getNext();
+    this->deleted = other.isDeleted();
+
+    return aux;
 }
 
 template <class T>
 bool record<T>::operator==(const record<T> &other) {
+    //data e next devem ser iguais para comparacao ser verdadeira
     return this->data == other.getData() && this->next == other.getNext();
 }
 

@@ -30,8 +30,7 @@ header::~header() {
 
 header header::operator=(const header &h) {
    header aux(h);
-   if (this == &h)
-      return *this;
+   if (this == &h) return *this;
 
    type = h.getType();
    firstDeleted = h.getFirstDeleted();
@@ -80,12 +79,12 @@ void header::setVersion(unsigned int v) {
 }
 
 string header::toString() {
-   string aux = "";
-   aux += type;
-   aux += string(reinterpret_cast<char*>(&version), sizeof(version));
-   aux += string(reinterpret_cast<char*>(&firstValid), sizeof(firstValid));
-   aux += string(reinterpret_cast<char*>(&firstDeleted), sizeof(firstDeleted));
-   return aux;
+    string aux = "";
+    aux += type;
+    aux += string(reinterpret_cast<char*>(&version), sizeof(version));
+    aux += string(reinterpret_cast<char*>(&firstValid), sizeof(firstValid));
+    aux += string(reinterpret_cast<char*>(&firstDeleted), sizeof(firstDeleted));
+    return aux;
 }
 
 void header::fromString(string repr) {
