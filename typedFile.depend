@@ -84,3 +84,34 @@
 	<fstream>
 	<type_traits>
 
+1669690546 source:c:\users\jean_\desktop\arvoreb\main.cpp
+	<iostream>
+	<clocale>
+	"header.h"
+	"record.h"
+	"typedfile.h"
+	"intserial.h"
+
+1570044850 c:\users\jean_\desktop\arvoreb\include\header.h
+	"serializable.h"
+
+1570044844 c:\users\jean_\desktop\arvoreb\include\serializable.h
+	<string>
+
+1669841966 c:\users\jean_\desktop\arvoreb\include\record.h
+	<string>
+	"serializable.h"
+
+1669848238 c:\users\jean_\desktop\arvoreb\include\typedfile.h
+	<fstream>
+	<type_traits>
+
+1669658695 c:\users\jean_\desktop\arvoreb\include\intserial.h
+	"serializable.h"
+
+1669690668 source:c:\users\jean_\desktop\arvoreb\src\header.cpp
+	"header.h"
+
+1669842163 source:c:\users\jean_\desktop\arvoreb\src\intserial.cpp
+	"intserial.h"
+
